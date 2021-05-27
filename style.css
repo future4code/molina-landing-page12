@@ -42,7 +42,7 @@ ul li a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    ;
+
 }
 
 .logo {
@@ -61,7 +61,6 @@ ul li a {
 
 #nav-container {
     font-weight: bold;
-
 }
 
 #nav-container ul {
@@ -75,8 +74,19 @@ ul li a {
     margin: 15px;
 }
 
+#nav-container a {
+    transition: 0.5s;
+}
+
+#nav-container a:hover {
+    color: #7CD569;
+    border-bottom: 1px solid #7CD569;
+    font-size: 1.125em;
+}
+
 .fix a {
     color: #7CD569;
+    border-bottom: 1px solid #7CD569;
 }
 
 

@@ -14,7 +14,6 @@ h1 {
 
 h2 {
     color: #7CD569;
-
 }
 
 li {
@@ -51,6 +50,9 @@ ul li a {
     padding-left: 70px;
 }
 
+.logo img {
+    width: 100px;
+}
 .logo a h1 {
     text-decoration: none;
 }
@@ -90,13 +92,35 @@ ul li a {
 }
 
 
-
-img {
-    width: 90px;
-}
-
 /* main */
 
+main {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+main h2 {
+    font-size: 40px;
+}
+
+main 
+#content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.img-seguro img {
+    border-radius: 150%;
+    
+}
 
 
 /* footer */

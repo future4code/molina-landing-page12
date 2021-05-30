@@ -1,0 +1,28 @@
+/* pagina de produto */
+
+.imagem-seguro-auto {
+    display: flex;
+
+}
+
+.text-auto {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+h3 {
+    color: #7CD569;
+}
+
+.seguro-vida,
+.seguro-auto {
+    display: flex;
+}
+
+.seguro-img {
+    width: 600px;
+    border: 1px solid white;
+    border-radius: 42%;
+}

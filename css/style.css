@@ -41,7 +41,6 @@ ul li a {
 #container {
     height: 100vh;
     display: grid;
-    grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr 150px;
 }
 
 /* Header */
@@ -144,7 +143,7 @@ main #content {
 
 /* Section */
 
-/* Primeira section */
+/* Section dos icones */
 
 #section-container {
     background: #b0c6dd;
@@ -341,59 +340,128 @@ footer {
 
 }
 
-/* pagina de produto */
-
-.imagem-seguro-auto {
-    display: flex;
-
-}
-
-.text-auto {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: space-evenly;
-}
-
-h3 {
-    color: #7CD569;
-}
-
-.seguro-vida,
-.seguro-auto {
-    display: flex;
-}
-
-.seguro-img {
-    width: 600px;
-    border: 1px solid white;
-    border-radius: 42%;
-}
-
 /* Responsividade  */
 
 @media only screen and (max-width: 600px) {
 
-    /* Pagina do Home */
+    /* Estilos gerais */
 
     #container {
         width: 100vw;
+        justify-items: center;
+        grid-template-rows: 115px 1fr 1fr 1fr 1fr 1fr 150px;
+
     }
 
 
-    main #content {
+    #content {
         display: flex;
         flex-direction: column;
+        padding-top: 50px;
     }
+
+
+    .img-seguro img {
+        width: 250px;
+    }
+
+    /* header */
+    #header-container {
+        flex-direction: column;
+    }
+
+    .logo {
+        padding-left: 00px;
+    }
+
+    /* nav */
+
+    #nav-container ul {
+        padding-right: 0px;
+    }
+
+    /* Pagina do Home */
+
 
     #section-container {
         flex-direction: column;
+        align-items: center;
         height: 1000px;
+        width: 100vw;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    main h2 {
+        font-size: 24px;
+    }
+
+    main p {
+        font-size: 16px;
+    }
+
+    #section-transparencia {
+        flex-direction: column;
+        width: 300px;
+        margin-top: 50px;
+    }
+
+    #section-transparencia h3 {
+        font-size: 24px;
+    }
+
+    #section-transparencia img {
+        border-radius: 100%;
+        width: 200px;
+        margin: 50px 0;
+        border: 3px solid #57eb66;
+        transition: 1s;
+    }
+
+    #section-transparencia img:hover {
+        border-radius: 100%;
+        width: 250px;
+        margin: 50px 0;
+    }
+
+    #text-transparencia {
+        width: 200px;
+
     }
 
     #main-prototipo {
         flex-direction: column;
+        height: 400px;
+        width: 100vw;
     }
 
+    #main-prototipo-text {
+        width: 200px;
+    }
+
+    #main-prototipo img {
+        border-radius: 25%;
+        width: 300px;
+    }
+
+    #ultimasection-text {
+        width: 350px;
+        height: 200px;
+    }
+
+    #ultimasection-text h3 {
+        font-size: 24px;
+        color: #1b2e42;
+    }
+
+    #ultimasection-text p {
+        font-size: 18px;
+    }
+
+    #footer-container {
+        flex-direction: column;
+    }
 
 }

@@ -402,6 +402,10 @@ footer {
         font-size: 16px;
     }
 
+    .img-seguro img:hover {
+        width: 300px;
+    }
+
     #section-transparencia {
         flex-direction: column;
         width: 300px;

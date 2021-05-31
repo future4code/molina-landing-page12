@@ -16,8 +16,7 @@ h3 {
     color: #7CD569;
 }
 
-.seguro-vida,
-.seguro-auto {
+.seguro-vida, .seguro-auto {
     display: flex;
 }
 
@@ -25,4 +24,32 @@ h3 {
     width: 600px;
     border: 1px solid white;
     border-radius: 42%;
+}
+
+/* responsividade */
+
+@media (max-width: 600px) {
+    #add-produto {
+        flex-direction: column;
+    }
+
+    .seguro-vida, .seguro-auto {
+        flex-direction: column;
+    }
+
+    .seguro-img {
+        width: 250px;
+    }
+
+    .seguro-vida h3 {
+        font-size: 18px;
+    }
+
+    .seguro-vida p , .seguro-vida li {
+        font-size: 16px;
+    }
+
+    .seguro-img {
+        margin-left: 80px;
+    }
 }
